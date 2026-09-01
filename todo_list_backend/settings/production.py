@@ -1,9 +1,7 @@
 import os
 import dj_database_url
-from django.conf.global_settings import STATIC_ROOT
 
 from .base import *
-from .development import DATABASES
 
 # ==============================================================================
 # SÉCURITÉ
@@ -12,7 +10,6 @@ from .development import DATABASES
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
-CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',')
 
 # ==============================================================================
 # BASE DE DONNÉES
