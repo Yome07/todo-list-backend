@@ -15,4 +15,4 @@ class TaskViewSet(viewsets.ModelViewSet):
 
 def railway_test(request):
     """Une vue simple pour valider le déploiement sur Railway."""
-    return JsonResponse({"message": "API déployée avec succès sur Railway ! Bravo !"})
+    return JsonResponse({"message": "API déployée avec succès sur Railway !"})
