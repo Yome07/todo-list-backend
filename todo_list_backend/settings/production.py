@@ -25,12 +25,6 @@ DATABASES = {
     )
 }
 
-# Forcer IPv4
-DATABASES['default']['OPTIONS'] = {
-    'connect_timeout': 10,
-    'keepalives': 1,
-    'keepalives_idle': 30,
-}
 
 # ==============================================================================
 # FICHIERS STATIQUES (WHITENOISE)
