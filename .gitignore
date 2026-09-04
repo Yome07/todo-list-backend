@@ -1,0 +1,97 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+/media/
+/staticfiles/
+
+# If using collectstatic to a folder named staticfiles, ignore it
+/staticfiles/
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Celery
+celerybeat-schedule
+
+# Misc
+*.pem
+.coverage
+coverage/
+
+# PyCharm
+*.iml
+
+# Logs
+*.log
+
+# Ignore media uploads (if stored locally)
+media/
+
+# Ignore static root (if generated locally)
+static/
+
+# Python virtual environment pyenv
+.python-version
+
+# dotenv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
