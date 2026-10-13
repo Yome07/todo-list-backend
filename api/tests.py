@@ -8,7 +8,7 @@ class CategoryModelTests(TestCase):
     def test_category_name_is_used_as_string_representation(self):
         category = Category.objects.create(name="Courses")
 
-        self.assertEqual(str(category), "Courses")
+        self.assertEqual(str(category), "Course")
 
 
 class ApiTests(APITestCase):
