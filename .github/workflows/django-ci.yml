@@ -36,6 +36,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Exécution du linter (flake8)
+        run: |
+          flake8 . --count --show-source --statistics
+
       - name: 5. Exécution des tests
         run: |
           python manage.py test

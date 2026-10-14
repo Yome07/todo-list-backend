@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from rest_framework import viewsets
 
 from api.models import Category, Task
@@ -22,3 +22,7 @@ def trigger_error(request):
     # Cette ligne va inévitablement provoquer une erreur
     division_by_zero = 1 / 0
     return JsonResponse({"this": "will never be returned"})
+
+def ma_vue(request):
+    variable_inutile = "test" # Flake8 va détecter que cette variable n'est jamais utilisée
+    return HttpResponse("Hello")
